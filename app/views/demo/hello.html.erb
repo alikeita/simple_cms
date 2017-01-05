@@ -1,0 +1,13 @@
+<h1>Hello World from hello </h1>
+<p>Find me in app/views/demo/index.html.erb</p>
+
+<a href="/demo/index">Hello page 1</a> <br />
+<%= link_to('Hello page 2', {:action => 'index'}) %> <br />
+
+
+<%= link_to('Hello with parameters', {:action => 'hello', :page => 5, :id => 20}) %><br />
+
+ID: <%= @id %><br />
+ID: <%= params[:id] %><br />
+Page: <%= @page %><br />
+Next page: <%= @page.to_i + 1 %><br />
